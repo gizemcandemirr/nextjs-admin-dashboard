@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import styles from '../../styles/Table.module.css'
 
 const Table = props => {
+   
 
+    // pagination devam ediyor
    const initDataShow = props.limit && props.bodyData ? props.bodyData.slice(0, Number(props.limit) ): props.bodyData
 
    let pages=1
