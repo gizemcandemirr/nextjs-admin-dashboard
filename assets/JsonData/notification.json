@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "/icon/bell.png",
+        "content": "Curabitur id eros quis nunc suscipit blandit"
+    },
+    {
+        "icon": "/icon/products.png",
+        "content": "Duis malesuada justo eu sapien elementum, in semper diam posuere"
+    },
+    {
+        "icon": "/icon/cart.png",
+        "content": "Donec at nisi sit amet tortor commodo porttitor pretium a erat"
+    },
+    {
+        "icon": "/icon/error.png",
+        "content": "In gravida mauris et nisi"
+    },
+    {
+        "icon": "/icon/cart.png",
+        "content": "Curabitur id eros quis nunc suscipit blandit"
+    }
+]

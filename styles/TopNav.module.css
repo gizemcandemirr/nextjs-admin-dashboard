@@ -1,0 +1,74 @@
+.topNav{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--topnav-height);
+    
+}
+
+.topNavSearch{
+    position:relative;
+    height: 50px;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.topNavSearch > input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    color:var(--txt-color);
+    background-color: var(--main-bg);
+}
+.topNavSearch > svg {
+    
+    width: 24px;
+    position: absolute;
+    right: 20px;
+}
+.topNavRight{
+    display: flex;
+    align-items: center;
+}
+.topNavRightItem{
+    margin-left: 30px;
+}
+.notificationItem{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.notificationItem:hover {
+    background-color: var(--main-color);
+}
+.notificationItem > img{
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+.topNavRightUser{
+    display: flex;
+    align-items: center;
+}
+.topNavRightUserImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+   align-items: center;
+  
+}
+.topNavRightUserName{
+   font-size: 1rem;
+   font-weight: 600;
+  
+}
+.topNavRightSection{
+    display: flex;
+}

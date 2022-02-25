@@ -1,0 +1,32 @@
+
+.badgeDanger{
+    
+    padding: 9px 9px;
+    color: var(--txt-white);
+    border-radius:10px;
+    box-shadow: var(--box-shadow);
+
+    background-color: var(--main-color-red);
+}
+.badgeSuccess{
+   
+    padding: 9px 9px;
+    color: var(--txt-white);
+    border-radius:10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--main-color-green);
+}
+.badgePrimary{
+    padding: 9px 9px;
+    color: var(--txt-white);
+    border-radius:10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--main-color-blue);
+}
+.badgeWarning{
+    padding: 9px 9px;
+    color: var(--txt-white);
+    border-radius:10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--main-color-orange);
+}

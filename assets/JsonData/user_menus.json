@@ -1,0 +1,18 @@
+[
+    {
+        "icon": "/icon/user-pin.png",
+        "content": "Profile"
+    },
+    {
+        "icon": "/icon/wallet.png",
+        "content": "My Wallet"
+    },
+    {
+        "icon": "/icon/settings.png",
+        "content": "Settings"
+    },
+    {
+        "icon": "/icon/logout.png",
+        "content": "Logout"
+    }
+]

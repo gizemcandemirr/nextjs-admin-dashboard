@@ -1,0 +1,47 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/",
+        "icon": "/icon/dashboard.png"
+    },
+    {
+        "display_name": "Customers",
+        "route": "/customers",
+        "icon": "/icon/user-pin.png"
+    },
+    {
+        "display_name": "Products",
+        "route": "/products",
+        "icon": "/icon/products.png"
+    },
+    {
+        "display_name": "Orders",
+        "route": "/orders",
+        "icon": "/icon/cart.png"
+    },
+    {
+        "display_name": "Analytics",
+        "route": "/analytics",
+        "icon": "/icon/bar-chart.png"
+    },
+    {
+        "display_name": "categories",
+        "route": "/categories",
+        "icon": "/icon/list.png"
+    },
+    {
+        "display_name": "discount",
+        "route": "/discount",
+        "icon": "/icon/discount.png"
+    },
+    {
+        "display_name": "inventory",
+        "route": "/inventory",
+        "icon": "/icon/store.png"
+    },
+    {
+        "display_name": "settings",
+        "route": "/settings",
+        "icon": "/icon/settings.png"
+    }
+]
