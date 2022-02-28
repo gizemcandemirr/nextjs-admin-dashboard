@@ -7,6 +7,8 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from '../redux/reducers'
 
+import {appWithTranslation} from "next-i18next"
+
 const store= createStore(
   rootReducer
 )
@@ -22,4 +24,4 @@ function MyApp({ Component, pageProps }) {
    )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);

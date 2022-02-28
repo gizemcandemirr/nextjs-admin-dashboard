@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useTranslation} from 'next-i18next'
+
 import statusCards from '../assets/JsonData/status-card-data.json'
 import StatusCard from '../components/statuscard/StatusCard'
 import Link from 'next/link';
@@ -156,12 +159,15 @@ const renderOrderBody= (item,index)=>(
 )
 
 export default function Home() {
+
+   const {t, i18n} = useTranslation();
+
   return (
     <div >
       <Head>
         <title>Admin Multiple-Theme</title>
       </Head>
-         <h2 className='page-header'>Dashboard</h2>
+         <h2 className='page-header'>{t('common:hello')}</h2>
          <div className="row">
            <div className='col-6'>
              <div className='row'>
@@ -239,3 +245,9 @@ export default function Home() {
     </div>
   )
 }
+
+export const getStaticProps= async ({locale}) => ({
+  props: {
+    ... (await serverSideTranslations(locale, ['common', 'home'] ))
+  }
+})
