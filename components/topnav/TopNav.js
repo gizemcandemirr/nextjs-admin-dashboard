@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "../../styles/TopNav.module.css";
 import Dropdown from "../dropdown/Dropdown";
+
+
+
 import Link from "next/link";
 
 
 // json dosyaları
 import notifications from '../../assets/JsonData/notification.json'
 import user_menu from '../../assets/JsonData/user_menus.json'
+import ThemeMenu from "../thememenu/ThemeMenu";
 
 //
 
@@ -88,6 +92,11 @@ const TopNav = () => {
             contentData={user_menu}
             renderItems={(item,index) => renderUserMenu(item,index)}
            />
+        </div>
+
+          
+      <div className={styles.topNavRightItem}>
+        <ThemeMenu />
         </div>
 
        </div>
