@@ -39,7 +39,7 @@ const customers = () => {
            <div className='card'>
              <div className='card-body'>
                  <Table
-                   limit='10'
+                   limit='45'
                    headData={customerTableHead}
                    renderHead={(item,index) => renderHead(item,index)}
                    bodyData={customerList}

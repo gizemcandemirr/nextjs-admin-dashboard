@@ -6,17 +6,26 @@ const Table = props => {
 
     // pagination devam ediyor
    const initDataShow = props.limit && props.bodyData ? props.bodyData.slice(0, Number(props.limit) ): props.bodyData
+   const [dataShow, setDataShow] = useState(initDataShow)
 
-   let pages=1
    let range=[]
+   let pages
    if(props.limit !== undefined){
-       let page = Math.floor(props.bodyData.length / Number(props.item))
-       pages = props.bodyData.length & Number(props.limit) === 0 ? page : page + 1
-      
-      
+       let page = Math.floor(props.bodyData.length / Number(props.limit))
+        pages = Math.floor(props.bodyData.length % Number(props.limit)) === 0 ? page : page + 1;
+       range = Array.from(Array(pages).keys())
    }
    
-   const [dataShow, setDataShow] = useState(initDataShow)
+  const [currPage, setCurrPage]= useState(0)
+  const selectPage= page =>{
+      const start = Number(props.limit) * page
+      console.log("start", start)
+      const end = start + Number(props.limit)
+
+      setDataShow(props.bodyData.slice(start,end))
+      setCurrPage(page)
+  }
+  
 
   return (
       <div>
@@ -52,8 +61,9 @@ const Table = props => {
          { pages > 1 ? (
                  <div className={styles.tablePagination} >
                      {
-                         pages.map((item,index) =>(
-                             <div className={styles.tablePaginationItem} key={index}>
+                         range.map((item,index) =>(
+                             <div className={currPage=== index ? styles.tablePaginationItemActive : styles.tablePaginationItem} key={index} 
+                             onClick={()=> selectPage(index)}>
                                  {item + 1 }
                              </div>
                          ))
