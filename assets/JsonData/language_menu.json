@@ -1,13 +1,16 @@
 [
     {
+        "href" :"/en",
         "icon": "/icon/us.svg",
         "content": "English"
     },
     {
+        "href" :"/tr",
         "icon": "/icon/tr.svg",
         "content": "Turkish"
     },
     {
+        "href" :"/fr",
         "icon": "/icon/fr.svg",
         "content": "France"
     }

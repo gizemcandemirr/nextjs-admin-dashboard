@@ -1,0 +1,21 @@
+.dropdown{
+    position: relative;
+    z-index: 99;
+}
+.dropdownToggle{
+
+    border:0;
+    outline:0;
+    background-color: transparent;
+    position: relative;
+}
+.toggle{
+    display: flex;
+    border:1px dotted rgb(204, 204, 204);
+    padding:10px;
+    
+}
+.span{
+    font-size: 20px;
+    margin-left:6px
+}

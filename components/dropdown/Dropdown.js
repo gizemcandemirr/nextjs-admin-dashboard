@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 import styles from "../../styles/Dropdown.module.css";
 
@@ -21,10 +22,13 @@ const Dropdown = props => {
       </button>
 
       {isListOpen && 
-       ( <div  className={styles.dropdownContent}>
+        
+      ( 
+       <div  className={styles.dropdownContent}>
           
-          {props.contentData && props.renderItems ? props.contentData.map((item, index) => props.renderItems(item, index) )
+         {props.contentData && props.renderItems ? props.contentData.map((item, index) => props.renderItems(item, index) )
           : ""} 
+             
        
         {props.renderFooter ? (
           <div className={styles.dropdownFooter}>{props.renderFooter()}</div>

@@ -13,6 +13,7 @@ import user_menu from '../../assets/JsonData/user_menus.json'
 import language_menu from '../../assets/JsonData/language_menu.json'
 
 import ThemeMenu from "../thememenu/ThemeMenu";
+import LanguageMenu from "../languagemenu/LanguageMenu";
 
 //
 
@@ -42,7 +43,7 @@ const renderUserMenu= (item,index) => (
    </Link> 
 )
 const renderLanguageMenu= (item,index) => (
-  <Link href='/' key={index}>
+  <Link href={item.href} key={index}>
   <div className={styles.notificationItem} key={index}>
    <img src={item.icon} alt="item" width={24} />
    <span>{item.content}</span>
@@ -61,6 +62,7 @@ const renderUserToggle = (user) =>(
   </div>
 )
 const renderLanguageToggle = (language) =>(
+ 
   <div className={styles.topNavRightUser}>
     <div className={styles.topNavRightUserImage}>
       <img src={language.image} alt="user" />
@@ -69,6 +71,9 @@ const renderLanguageToggle = (language) =>(
       {language.display_name}
     </div>
   </div>
+ 
+ 
+
 )
 
 
@@ -104,7 +109,7 @@ const TopNav = () => {
         icon="/icon/bell.png"
         badge="12"
         contentData={notifications}
-        renderItems={(item,index) => renderNotificationItem(item,index)}
+        renderItems={(item,index) =>renderNotificationItem(item,index) }
         renderFooter={()=> <Link href='/'>View All</Link>}
          />
         </div>
@@ -119,9 +124,9 @@ const TopNav = () => {
         </div>
 
         <div className={styles.topNavRight}>
- <div className={styles.topNavRightItem}>
-           <Dropdown
-             customToggle={() => renderLanguageToggle(curr_language)}
+          <div className={styles.topNavRightItem}>
+          <Dropdown
+            customToggle={() => renderLanguageToggle(curr_language)}
             contentData={language_menu}
             renderItems={(item,index) => renderLanguageMenu(item,index)}
            />
