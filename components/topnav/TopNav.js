@@ -10,6 +10,8 @@ import Link from "next/link";
 // json dosyaları
 import notifications from '../../assets/JsonData/notification.json'
 import user_menu from '../../assets/JsonData/user_menus.json'
+import language_menu from '../../assets/JsonData/language_menu.json'
+
 import ThemeMenu from "../thememenu/ThemeMenu";
 
 //
@@ -17,6 +19,10 @@ import ThemeMenu from "../thememenu/ThemeMenu";
 const curr_user ={
   display_name: 'Gizem Candemir',
   image:'/icon/user-pin.png'
+}
+const curr_language ={
+  display_name: 'En',
+  image:'/icon/us.svg'
 }
 
 const renderNotificationItem = (item,index) =>(
@@ -35,6 +41,14 @@ const renderUserMenu= (item,index) => (
   </div>
    </Link> 
 )
+const renderLanguageMenu= (item,index) => (
+  <Link href='/' key={index}>
+  <div className={styles.notificationItem} key={index}>
+   <img src={item.icon} alt="item" width={24} />
+   <span>{item.content}</span>
+ </div>
+  </Link> 
+)
 
 const renderUserToggle = (user) =>(
   <div className={styles.topNavRightUser}>
@@ -43,6 +57,16 @@ const renderUserToggle = (user) =>(
     </div>
     <div className={styles.topNavRightUserName}>
       {user.display_name}
+    </div>
+  </div>
+)
+const renderLanguageToggle = (language) =>(
+  <div className={styles.topNavRightUser}>
+    <div className={styles.topNavRightUserImage}>
+      <img src={language.image} alt="user" />
+    </div>
+    <div className={styles.topNavRightUserName}>
+      {language.display_name}
     </div>
   </div>
 )
@@ -94,6 +118,16 @@ const TopNav = () => {
            />
         </div>
 
+        <div className={styles.topNavRight}>
+ <div className={styles.topNavRightItem}>
+           <Dropdown
+             customToggle={() => renderLanguageToggle(curr_language)}
+            contentData={language_menu}
+            renderItems={(item,index) => renderLanguageMenu(item,index)}
+           />
+        </div>
+        </div>
+       
           
       <div className={styles.topNavRightItem}>
         <ThemeMenu />

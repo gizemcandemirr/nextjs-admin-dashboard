@@ -1,0 +1,15 @@
+[
+    {
+        "icon": "/icon/us.svg",
+        "content": "English"
+    },
+    {
+        "icon": "/icon/tr.svg",
+        "content": "Turkish"
+    },
+    {
+        "icon": "/icon/fr.svg",
+        "content": "France"
+    }
+    
+]

@@ -1,0 +1,20 @@
+{
+    "customer":"Müşteri",
+    "dailyVisits":"Günlük Ziyaretler",
+    "homePage": "Anasayfa", 
+    "latestOrder":"Son Siparişler",
+    "orderNo": "Sipariş No",
+    "paid": "Ödendi",
+    "pending":"Bekliyor",
+    "refund":"İptal/İade",
+    "shipping":"Kargo",
+    "status": "Durum",
+    "topCustomers": "En İyi Müşteriler",
+    "totalIncome":"Toplam Gelir",
+    "totalOrders":"Toplam Sipariş",
+    "totalPrice": "Toplam Fiyat",
+    "totalSales":"Toplam Sipariş",
+    "totalSpending": "Toplam Harcama",
+    "viewAll": "Hepsini Gör"
+   
+}

@@ -1,0 +1,19 @@
+{
+    "customer":"Customer",
+    "dailyVisits":"Daily Visits",
+    "homePage": "Home Page", 
+    "latestOrder":"Latest Order",
+    "orderNo": "Order No.",
+    "paid": "Paid",
+    "pending":"Pending",
+    "refund":"REfund",
+    "shipping":"Shipping",
+    "status": "Status",
+    "topCustomers": "Top Customers",
+    "totalIncome":"Total Income",
+    "totalOrders":"Total Orders",
+    "totalPrice": "Total Price",
+    "totalSales":"Total Sales",
+    "totalSpending": "Total Spending",
+    "viewAll": "View All"
+}

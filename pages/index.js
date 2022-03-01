@@ -13,12 +13,12 @@ import Badge from '../components/badge/Badge';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 const chartOptions = {
   series: [{
-    name:'Online Custom',
-    data: [40,70,50,20,90,30,91,60],
+    name:'Sales',
+    data: [40,70,50,20,90,30,91,60,160],
     },
     {
-      name:'Sote Customers',
-      data: [40,30,60,80,50,20,11,50,10],
+      name:'Store',
+      data: [40,30,60,80,50,20,11,50,110],
       },
   ],
    options:{
@@ -167,7 +167,7 @@ export default function Home() {
       <Head>
         <title>Admin Multiple-Theme</title>
       </Head>
-         <h2 className='page-header'>{t('common:hello')}</h2>
+         <h2 className='page-header'>{t('home:homePage')}</h2>
          <div className="row">
            <div className='col-6'>
              <div className='row'>
@@ -217,7 +217,7 @@ export default function Home() {
               </div>
                
                <div className='card__footer'>
-                  <Link href='/'>view all</Link>
+                  <Link href='/'>{t('home:viewAll')}</Link>
                </div>
 
              </div>
@@ -236,7 +236,7 @@ export default function Home() {
                </div>
                <div className='card__footer'>
                     <Link href="/">
-                      view all
+                    {t('home:viewAll')}
                     </Link>
                </div>
              </div>
@@ -248,6 +248,6 @@ export default function Home() {
 
 export const getStaticProps= async ({locale}) => ({
   props: {
-    ... (await serverSideTranslations(locale, ['common', 'home'] ))
+    ... (await serverSideTranslations(locale, ['home'] ))
   }
 })
