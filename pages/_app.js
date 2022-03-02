@@ -16,7 +16,7 @@ const store= createStore(
 function MyApp({ Component, pageProps }) {
   return(
     <Provider store={store}>
-       <Layout>
+       <Layout >
     <Component {...pageProps} />
   </Layout>
     </Provider>

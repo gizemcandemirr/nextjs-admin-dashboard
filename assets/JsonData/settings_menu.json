@@ -1,0 +1,13 @@
+[
+    {
+        "display_name": "Profile",
+        "route": "/",
+        "icon": "/icon/dashboard.png"
+    },
+    {
+        "display_name": "Settings",
+        "route": "/customers",
+        "icon": "/icon/user-pin.png"
+    }
+  
+]

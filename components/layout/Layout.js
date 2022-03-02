@@ -6,9 +6,12 @@ import TopNav from "../topnav/TopNav";
 import { useSelector, useDispatch} from "react-redux";
 import ThemeAction from '../../redux/actions/ThemeAction'
 import Login from "../login/Login";
-const Layout = ({ children }) => {
-  const [signin, setSignIn] =useState(true)
+import SettingsSidebar from "../settingsSidebar/SettingsSidebar";
 
+
+
+const Layout = ({ children } ) => {
+  const [signin, setSignIn] =useState(true)
   const themeReducer = useSelector (state => state.ThemeReducer)
   const dispatch = useDispatch()
   
@@ -27,7 +30,8 @@ const Layout = ({ children }) => {
    <div>
      { signin == true ?
     (   <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-          <Sidebar/>
+         
+         { {children} === 'settings' ? <SettingsSidebar/> : <Sidebar />   }    
     <div className={styles.layout__content}>
          <TopNav/>
       <div className={styles.layout__contentMain}>{children}</div>

@@ -1,9 +1,10 @@
 import React from 'react'
+
 import styles from '../../styles/Sidebar.module.css'
 import { useRouter } from 'next/router'
 
 
-import sidebar_items from '../../assets/JsonData/sidebar_routes.json'
+import settings_menu from '../../assets/JsonData/settings_menu.json'
 import Link from 'next/link'
 
 const SidebarItem = props =>{
@@ -22,18 +23,17 @@ const SidebarItem = props =>{
   )
 }
 
-const Sidebar = () => {
-  const router = useRouter()
+const SettingsSidebar = props => {
+    const router = useRouter()
 
-   const activeItem= sidebar_items.findIndex(item => item.route === router.pathname)
-   
+    const activeItem= settings_menu.findIndex(item => item.route === router.pathname)
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarLogo}>
         <img src="/logo.png" alt="companylogo" />
       </div>
       {
-        sidebar_items.map((item,index) => (
+        settings_menu.map((item,index) => (
           <Link href={item.route} key={index}>
             <a>
                <SidebarItem
@@ -49,4 +49,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SettingsSidebar
