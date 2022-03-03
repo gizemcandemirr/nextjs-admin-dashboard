@@ -20,6 +20,11 @@ const mode_settings= [
 ]
 
 const color_settings=[
+    {id:'purple',
+    name:'Purple',
+    background:'purple-color',
+    class:'theme-color-purple'
+   },
     {id:'blue',
     name:'Blue',
     background:'blue-color',

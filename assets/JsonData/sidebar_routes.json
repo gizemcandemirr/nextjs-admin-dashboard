@@ -42,6 +42,7 @@
     {
         "display_name": "settings",
         "route": "/settings",
-        "icon": "/icon/settings.png"
+        "icon": "/icon/settings.png",
+        "dropIcon": "/icon/down.png"
     }
 ]

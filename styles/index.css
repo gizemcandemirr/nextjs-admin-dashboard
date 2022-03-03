@@ -4,8 +4,8 @@
     --second-bg: #fafafb;
     --txt-color: #455560;
     --txt-white: #fff;
-    --main-color: #999898;
-    --second-color: #363636;
+    --main-color: #777797;
+    --second-color: #777797;
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     --main-bg-light: #ffffff;
@@ -21,6 +21,9 @@
     --main-color-blue: #349eff;
     --second-color-blue: #62b4ff;
 
+    --main-color-purple:#63629F;
+    --second-color-purple:#63629F;
+      
     --main-color-red: #fb0b12;
     --second-color-red: #ff4a6b;
 
@@ -33,9 +36,9 @@
     --main-color-orange: #d68102;
     --second-color-orange: #fca11a;
 
-    --sidebar-width: 300px;
-    --border-radius: 15px;
-    --topnav-height: 110px;
+    --sidebar-width: 250px;
+    --border-radius: 12px;
+    --topnav-height: 100px;
     --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     
@@ -127,7 +130,10 @@ input:focus {
     background-color: var(--main-bg-dark);
     color: #fff;
 }
-
+.purple-color{
+    background-color: var(--main-color-purple);
+    color: #fff;
+}
 .blue-color {
     background-color: var(--main-color-blue);
     color: #fff;

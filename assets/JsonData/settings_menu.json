@@ -1,11 +1,21 @@
 [
     {
-        "display_name": "Profile",
+        "display_name": "Users",
         "route": "/",
         "icon": "/icon/dashboard.png"
     },
     {
-        "display_name": "Settings",
+        "display_name": "User Roles",
+        "route": "/customers",
+        "icon": "/icon/user-pin.png"
+    },
+    {
+        "display_name": "Security",
+        "route": "/customers",
+        "icon": "/icon/user-pin.png"
+    },
+    {
+        "display_name": "Advanced",
         "route": "/customers",
         "icon": "/icon/user-pin.png"
     }
