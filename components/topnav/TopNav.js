@@ -18,8 +18,8 @@ import LanguageMenu from "../languagemenu/LanguageMenu";
 //
 
 const curr_user ={
-  display_name: 'Gizem Candemir',
-  image:'/icon/user-pin.png'
+  display_name: 'Admin',
+  image:'/sidebarIcon/account.png'
 }
 const curr_language ={
   display_name: 'En',
@@ -54,7 +54,7 @@ const renderLanguageMenu= (item,index) => (
 const renderUserToggle = (user) =>(
   <div className={styles.topNavRightUser}>
     <div className={styles.topNavRightUserImage}>
-      <img src={user.image} alt="user" />
+      <img src={user.image} alt="user" width={24} />
     </div>
     <div className={styles.topNavRightUserName}>
       {user.display_name}
@@ -106,7 +106,7 @@ const TopNav = () => {
       <div className={styles.topNavRight}>
         <div className={styles.topNavRightItem}>
         <Dropdown
-        icon="/icon/bell.png"
+        icon="/sidebarIcon/notification.png"
         badge="12"
         contentData={notifications}
         renderItems={(item,index) =>renderNotificationItem(item,index) }

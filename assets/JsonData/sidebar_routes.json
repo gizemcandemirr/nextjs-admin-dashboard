@@ -1,48 +1,48 @@
 [
     {
-        "display_name": "Dashboard",
+        "display_name": "Home",
         "route": "/",
-        "icon": "/icon/dashboard.png"
+        "icon": "/sidebarIcon/home.svg"
     },
     {
-        "display_name": "Customers",
+        "display_name": "Orders",
         "route": "/customers",
-        "icon": "/icon/user-pin.png"
+        "icon": "/sidebarIcon/orders.svg"
     },
     {
         "display_name": "Products",
         "route": "/products",
-        "icon": "/icon/products.png"
+        "icon": "/sidebarIcon/products.svg"
     },
     {
-        "display_name": "Orders",
-        "route": "/orders",
-        "icon": "/icon/cart.png"
+        "display_name": "Customer",
+        "route": "/customers",
+        "icon": "/sidebarIcon/customers.svg"
     },
     {
         "display_name": "Analytics",
         "route": "/analytics",
-        "icon": "/icon/bar-chart.png"
+        "icon": "/sidebarIcon/analytics.svg"
     },
     {
-        "display_name": "categories",
+        "display_name": "Marketing",
         "route": "/categories",
-        "icon": "/icon/list.png"
+        "icon": "/sidebarIcon/marketing.svg"
     },
     {
-        "display_name": "discount",
+        "display_name": "Discount",
         "route": "/discount",
-        "icon": "/icon/discount.png"
+        "icon": "/sidebarIcon/discount.svg"
     },
     {
-        "display_name": "inventory",
+        "display_name": "Inventory",
         "route": "/inventory",
-        "icon": "/icon/store.png"
+        "icon": "/sidebarIcon/warehouse.png"
     },
     {
-        "display_name": "settings",
-        "route": "/settings",
-        "icon": "/icon/settings.png",
+        "display_name": "Settings",
+        "route": "/settings/users",
+        "icon": "/sidebarIcon/settings.png",
         "dropIcon": "/icon/down.png"
     }
 ]

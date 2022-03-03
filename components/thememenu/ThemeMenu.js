@@ -78,7 +78,7 @@ const ThemeMenu = () => {
     <div>     
 
       <button className={styles.dropdownToggle} onClick={()=>setIsListOpen(!isListOpen)}>
-          <img src="/icon/palette.png" alt="palette" />
+          <img src="/sidebarIcon/paint-palette.png" width={24} alt="palette" />
       </button>
         {
             isListOpen &&(

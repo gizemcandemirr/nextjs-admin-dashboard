@@ -1,23 +1,23 @@
 [
     {
         "display_name": "Users",
-        "route": "/",
-        "icon": "/icon/dashboard.png"
+        "route": "/settings/users",
+        "icon": "/sidebarIcon/home.svg"
     },
     {
         "display_name": "User Roles",
-        "route": "/customers",
-        "icon": "/icon/user-pin.png"
+        "route": "/settings/userRoles",
+        "icon": "/sidebarIcon/account.png"
     },
     {
         "display_name": "Security",
-        "route": "/customers",
-        "icon": "/icon/user-pin.png"
+        "route": "/settings/security",
+        "icon": "/sidebarIcon/settings.png"
     },
     {
         "display_name": "Advanced",
-        "route": "/customers",
-        "icon": "/icon/user-pin.png"
+        "route": "/settings/advanced",
+        "icon": "/sidebarIcon/account.png"
     }
   
 ]

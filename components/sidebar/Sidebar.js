@@ -16,7 +16,7 @@ const SidebarItem = props =>{
       
       <div className={active ? styles.Active : styles.sidebarItemInner}>
         <div className={styles.sidebarItemInnerLeft} >
-          <img src={props.icon} />
+          <img src={props.icon} width={24} />
         <span>
           {props.title}
         </span>
@@ -38,7 +38,7 @@ const SidebarContent = props =>{
       
       <div className={active ? styles.Active : styles.sidebarItemInner}>
         <div className={styles.sidebarItemInnerLeft}>
-           <img src={props.icon} />
+           <img src={props.icon} width={24} />
         <span>
           {props.title}
         </span>
@@ -80,7 +80,7 @@ const Sidebar = () => {
       }
 
       {
-        path === '/settings' && isListOpen &&(
+        path === '/settings/users' && isListOpen &&(
 
           settings_menu.map((item,index) => (
             <Link href={item.route} key={index}>

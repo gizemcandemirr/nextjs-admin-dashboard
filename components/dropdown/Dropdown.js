@@ -11,7 +11,7 @@ const Dropdown = props => {
     <div className={styles.dropdown}>
        
        <button className={styles.dropdownToggle} onClick={()=>setIsListOpen(!isListOpen)}>
-        {props.icon ? <img src={props.icon} /> : ""}
+        {props.icon ? <img src={props.icon } width={24} /> : ""}
 
         {props.badge ? (
           <span className={styles.dropdownToggleBadge}>{props.badge}</span>
