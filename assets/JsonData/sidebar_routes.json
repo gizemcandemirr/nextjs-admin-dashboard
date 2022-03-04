@@ -43,6 +43,6 @@
         "display_name": "Settings",
         "route": "/settings/users",
         "icon": "/sidebarIcon/settings.png",
-        "dropIcon": "/icon/down.png"
+        "dropIcon": "/sidebarIcon/arrow-down.png"
     }
 ]

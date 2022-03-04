@@ -4,6 +4,7 @@ import Table from '../components/table/Table'
 
 // json verileri
 import customerList from '../assets/JsonData/customer-list.json'
+import Popup from '../components/popup/Popup'
 
 const customerTableHead =[
   '',
@@ -49,9 +50,19 @@ const customers = () => {
            </div>
          </div>
        </div>
-
+       <Popup />
     </div>
+
+
+
   )
+
+
+
+
+
+
+
 }
 
 export default customers

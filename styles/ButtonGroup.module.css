@@ -4,7 +4,7 @@
 }
 .buttonGroup{
     background: transparent;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 .buttonGroup:hover{
     background-color: rgb(71, 71, 71);

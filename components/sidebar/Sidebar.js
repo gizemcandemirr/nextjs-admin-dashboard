@@ -22,7 +22,7 @@ const SidebarItem = props =>{
         </span>
         </div>
         <div>
-            {props.dropIcon && <img src={props.dropIcon} alt="drop" />}
+            {props.dropIcon && <img src={props.dropIcon} alt="drop" width={24} />}
         </div>
        
       

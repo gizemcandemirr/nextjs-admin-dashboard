@@ -21,7 +21,7 @@ const customerTableHead =[
       <td className='td'>{item.email}</td>
       <td className='td'>{item.phone}</td>
       <td className='td'>{item.role}</td>
-      <td className='td'><ButtonGroup/></td>
+      <td className='td'><ButtonGroup /></td>
     </tr>
   )
   
