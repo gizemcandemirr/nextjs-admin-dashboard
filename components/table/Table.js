@@ -47,13 +47,18 @@ const Table = props => {
                      {
                          props.bodyData && props.renderBody ? (
                              <tbody className={styles.tbody}>
-                                 {
+                     
+                                {
                                      dataShow.map((item,index)=> props.renderBody(item,index))
+                                     
                                  }
                              </tbody>
                          ): null
                      }
+                    
+
                  </tr>
+               
              </thead>
         </table>
     </div> 

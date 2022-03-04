@@ -1,0 +1,28 @@
+.topNavSearch{
+    position:relative;
+    width: 200px;
+    height: 40px;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid gray;
+    margin-right: 5px;
+}
+.topNavSearch > input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    color:var(--txt-color);
+    background-color: var(--main-bg);
+}
+.topNavSearch > svg {
+    
+    width: 24px;
+    position: absolute;
+    right: 20px;
+}

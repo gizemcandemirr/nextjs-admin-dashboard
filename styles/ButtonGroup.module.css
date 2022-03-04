@@ -1,0 +1,13 @@
+.buttonContent{
+    display: flex;
+    justify-content: center;
+}
+.buttonGroup{
+    background: transparent;
+    margin-right: 10px;
+}
+.buttonGroup:hover{
+    background-color: rgb(71, 71, 71);
+    width: 25px;
+    border-radius: 10px;
+}

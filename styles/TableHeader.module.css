@@ -1,0 +1,45 @@
+.headerContent{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 6vh;
+}
+.backItems{
+margin-top:1vh;
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+padding: 0 20px;
+}
+.backItems > span {
+    margin-left: 10px;
+}
+.rightItems{
+    margin-top:1vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.buttonHeader{
+width: 180px;
+height: 40px;
+background-color: var(--main-color);
+border-radius: 15px;
+font-size: 1rem;
+color:white;
+margin-right: 10px;
+margin-left: 15px;
+
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+}
+.spanHeader{
+    margin-left: 1vh;
+}
+.buttonGroup{
+    display: flex;
+}

@@ -1,14 +1,11 @@
 [
     {
-        "icon": "/icon/user-pin.png",
+        "icon": "/sidebarIcon/account.png",
         "content": "Profile"
     },
+    
     {
-        "icon": "/icon/wallet.png",
-        "content": "My Wallet"
-    },
-    {
-        "icon": "/icon/settings.png",
+        "icon": "/sidebarIcon/settings.png",
         "content": "Settings"
     },
     {

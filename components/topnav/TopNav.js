@@ -28,7 +28,7 @@ const curr_language ={
 
 const renderNotificationItem = (item,index) =>(
   <div className={styles.notificationItem} key={index}>
-    <img src={item.icon} alt="notification item" />
+    <img src={item.icon} alt="notification item" width={24} />
     <span>{item.content}</span>
 
   </div>
@@ -36,7 +36,7 @@ const renderNotificationItem = (item,index) =>(
 const renderUserMenu= (item,index) => (
    <Link href='/' key={index}>
    <div className={styles.notificationItem} key={index}>
-    <img src={item.icon} alt="notification item" />
+    <img src={item.icon} alt="notification item" width={24} />
     <span>{item.content}</span>
 
   </div>
